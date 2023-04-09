@@ -1,0 +1,368 @@
+*{
+    margin:0;
+    padding:0;
+    color: whitesmoke;
+    box-sizing: border-box;
+}
+body,html{
+    overflow-x: hidden;
+}
+.navbar{
+    display: flex;
+    position:absolute;
+    top:0; 
+    width:100vw; 
+    justify-content: space-between;
+    padding:1.25rem;
+}
+.nav-links{
+    display:flex;
+    align-item:center;
+}
+.nav-links li{
+    list-style: none;
+    margin:0rem 1.875rem;
+}
+.nav-links li a{
+    /* text-decoration:none; */
+    color:#e62301;
+}
+.nav-icon{
+    position:absolute;
+    right:1.875rem;
+    font-size:1.5rem;
+    display: none;
+}
+header{
+width:100vw;
+height:100vh;
+background-image:url("adventure.jpg");
+background-size:cover;
+background-position:bottom ;
+display:flex;
+justify-content:center;
+align-items: center;
+}
+.header-content{
+    text-align:center; 
+    margin-top:4rem;
+}
+.header-content h2{
+    font-size:4vmin;
+}
+.header-content h1{
+    font-size:7vmin;
+    margin-top:2.5rem;
+    margin-bottom:1.875rem;
+}
+.line{
+    width:15rem;
+    height:0.25rem;
+    background:#e62301;
+    margin:0.625rem auto;
+    border-radius:0.25rem;
+}
+.btn{
+    text-decoration: none;
+    background-color:#e62301;
+    border-radius:1rem;
+    padding:0.5rem 0.93rem;
+}
+section{
+    width:80%;
+    margin:2.5rem auto;
+}
+.title h1 {
+    text-align:center;
+    font-size:7vmin; 
+    color:rgb(48, 48, 82);
+}
+.row{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    width:100%;
+}
+.row .column{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.row .column img{
+    width:30rem;
+    height:20rem;
+}
+.events .row{
+    margin-top:3.125rem;
+}
+h4{
+    font-size:3.5vmin;
+    color:#484872;
+    margin:1rem auto;
+    text-align:center;
+}
+p{
+color:grey;
+padding:0rem 2.5rem;
+/* text-align: center; */
+}
+.events .btn{
+    margin:1.25rem auto;
+}
+.explore{
+    width:100%;
+    height:80vh;
+    background-image:url("exlore3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    /* display:flex; */
+}
+ .explore-content{
+    position:absolute;
+    right:0px;
+    width:60%;
+    padding:10rem;
+    color:whitesmoke;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+ }
+ .explore-content h1{
+    font-size:9vmin;
+ }
+ .explore-content p{
+    font-size:2.5vmin;
+ }
+ .explore-content .line{
+    margin-bottom:3.125rem;
+ }
+ .explore-content .btn{
+    margin-top:2.5rem;
+ }
+ .tours{
+    display:flex;
+    width:100%;
+ }
+ .content{
+    width:50%;
+    display:flex;
+    flex-direction:column; 
+ }
+ .content h1{
+    margin-top:9.375rem;
+    font-size:7vmin;
+    color:#484872;
+    text-align: center;
+ }
+ .content .line{
+margin-bottom:2rem;
+ }
+ .content p{
+    margin-bottom:1rem;
+ }
+ .content .btn{
+    width:7rem;
+    margin:1.563rem auto;
+ }
+ .image-gallery{
+    width:50%;
+    display: flex;
+    flex-wrap:wrap;
+ }
+ .image-gallery img{
+    width:18.75rem;
+     height:15.625rem; 
+    margin:0.3rem;
+ }
+.footer{
+    padding:1.25rem 5rem;
+    width:100%;
+        min-height:50px;
+        margin:0px;
+        background-color:#484872;
+        text-align:center;
+}
+.footer p{
+    color:whitesmoke;
+    margin:1.25rem auto;
+    padding:1.25rem auto;
+}
+
+/* ------------------media queries for mobile devices----------------- */
+@media (min-width:280px) and (max-width:540px){
+    .nav-links{
+        display:none;
+    }
+    .nav-icon{
+         display:block;
+    }
+    .row{
+        flex-direction:column;
+    }
+    h4{
+        font-size:4.5vmin;
+    }
+    .row .column{
+        margin:20px auto;
+    }
+    .row .column img{
+    width:250px;
+    height:250px; 
+    }
+    .explore-content{
+        width:auto; 
+        padding-top:8rem;
+     }
+     .explore h1{
+        font-size:3.5rem;
+     }
+     .explore-content p{
+        display:none;
+     }
+     .explore-content .line{
+        width:6rem;
+        margin-bottom:1rem;
+     }
+     .event-content .btn{
+        font-size:3rem;
+      } 
+      .tours{
+        margin-top:0px;
+        flex-direction:column;
+      }
+      .content{
+        width:100%;
+      }
+      .content h1{
+        margin-top:2rem;
+        font-size:6vmin;
+     }
+     .content .btn{
+        width:7rem;
+     }
+      .image-gallery{
+        width:100%;
+        align-items: center;
+        flex-direction:column;
+        flex-wrap:nowrap;
+      }
+      .image-gallery img{
+        max-width:30rem;
+        margin:1rem;
+     }
+     .footer{
+        padding:1rem 1rem;
+    }
+    .footer p{
+        margin:1rem auto;
+        padding:1rem auto;
+    }
+}
+@media (min-width:765px) and (max-width:912px) {
+    .nav-links{
+        display:none;
+    }
+    .nav-icon{
+         display:block;
+    }
+    .row .column img{
+    width:300px;
+    height:250px; 
+    }
+    .row .column p{
+        text-align:center;
+    }
+     .explore-content{
+        width:75%;
+        padding:10rem;
+     }
+     .tours{
+        display:flex;
+        width:100%;
+        flex-direction: column;
+     }
+     .content{
+        width:100%;
+        display:flex;
+        flex-direction:column; 
+     }
+     .content h1{
+        margin-top:2rem;
+     }
+     .image-gallery{
+        width:100%;
+        display: flex;
+        justify-content:center;
+     }
+     .image-gallery img{
+        width:20.75rem;
+        height:18.625rem; 
+        margin:0.8rem;
+     }
+}
+@media (min-width:980px) and (max-width:1024px){
+    
+    .row .column img{
+        width:23rem;
+        height:19rem;
+    }
+    h4{
+        font-size:4vmin;
+    }
+     .explore-content{
+        width:70%;
+        padding:8rem;
+     }
+     .explore-content p{
+        font-size:3vmin;
+     }
+     .explore-content .line{
+        margin-bottom:3rem;
+     }
+     .tours{
+        flex-direction: column;
+     }
+     .content{
+        width:100%;
+     }
+     .content h1{
+        margin-top:2rem;
+     }
+     .image-gallery{
+        width:100%;
+        justify-content: center;
+     }
+     .image-gallery img{
+        width:80rem; 
+        height:30rem; 
+        border-radius:0.9rem;
+        margin:1.5rem;
+     }
+}
+img{
+    transition: transform .3s ease;
+}
+img:hover{
+    transform:scale(1.1);
+}
+.btn:hover{
+background-color: #7c7cb1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
